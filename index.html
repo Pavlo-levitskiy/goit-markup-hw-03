@@ -11,6 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <!--Шапка сайту-->
@@ -23,7 +30,7 @@
           >
           <ul class="site-nav list header-list">
             <li class="header-link">
-              <a class="link" href="./index.html">Студия</a>
+              <a class="link site-link" href="./index.html">Студия</a>
             </li>
             <li class="header-link">
               <a class="link" href="./portfolio.html">Портфолио</a>
@@ -47,7 +54,7 @@
         </ul>
       </div>
     </header>
-    <div class="border"></div>
+
     <!--Головне сторінки-->
     <main>
       <section class="hero hero-color">
@@ -60,10 +67,10 @@
       </section>
 
       <!--Розмітка-->
-      <section class="section">
+      <section class="section features">
         <div class="container">
           <ul class="list section-text">
-            <li class="list-text">
+            <li class="list-text text">
               <h3 class="section-subtitle">Внимание к деталям</h3>
               <p class="desc">
                 Идейные соображения, а также начало повседневной работы по
@@ -96,67 +103,73 @@
       </section>
       <!--Чем ми займаємось-->
 
-      <div class="section-photo">
-        <section class="section">
-          <div class="container">
-            <h3 class="section-photo heading-photo">Чем мы занимаемся</h3>
-            <ul class="list item-photo">
-              <li>
-                <img
-                  src="./images/photo1.jpg"
-                  alt="фото1"
-                  width="370"
-                  height="294"
-                />
-              </li>
-              <li>
-                <img
-                  src="./images/photo2.jpg"
-                  alt="фото2"
-                  width="370"
-                  height="294"
-                />
-              </li>
-              <li>
-                <img
-                  src="./images/photo3.jpg"
-                  alt="фото3"
-                  width="370"
-                  height="294"
-                />
-              </li>
-            </ul>
-          </div>
-        </section>
-      </div>
+      <section class="section section-photo">
+        <div class="container">
+          <h3 class="section-photo heading-photo">Чем мы занимаемся</h3>
+          <ul class="list item-photo">
+            <li>
+              <img
+                src="./images/photo1.jpg"
+                alt="фото1"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/photo2.jpg"
+                alt="фото2"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/photo3.jpg"
+                alt="фото3"
+                width="370"
+                height="294"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <!--Наша команда-->
       <section class="section section-team">
         <div class="container">
           <h3 class="section-photo heading-photo">Наша команда</h3>
           <ul class="list item-photo">
-            <li class="section-photo profession-photo">
+            <li class="profession-photo">
               <img src="./images/img1.jpg" alt="команда" width="270" />
-              <h3 class="photo">Игорь Демьяненко</h3>
-              <p class="profession">Product Designer</p>
+              <div class="wrapper">
+                <h3 class="photo">Игорь Демьяненко</h3>
+                <p class="profession">Product Designer</p>
+              </div>
             </li>
 
-            <li class="section-photo profession-photo">
+            <li class="profession-photo">
               <img src="./images/img2.jpg" alt="команда" width="270" />
-              <h3 class="photo">Ольга Репина</h3>
-              <p class="profession">Frontend Developer</p>
+              <div class="wrapper">
+                <h3 class="photo">Ольга Репина</h3>
+                <p class="profession">Frontend Developer</p>
+              </div>
             </li>
 
-            <li class="section-photo profession-photo">
+            <li class="profession-photo">
               <img src="./images/img3.jpg" alt="команда" width="270" />
-              <h3 class="photo">Николай Тарасов</h3>
-              <p class="profession">Marketing</p>
+              <div class="wrapper">
+                <h3 class="photo">Николай Тарасов</h3>
+                <p class="profession">Marketing</p>
+              </div>
             </li>
 
-            <li class="section-photo profession-photo">
+            <li class="profession-photo">
               <img src="images/img4.jpg" alt="команда" width="270" />
-              <h3 class="photo">Михаил Ермаков</h3>
-              <p class="profession">UI Designer</p>
+              <div class="wrapper">
+                <h3 class="photo">Михаил Ермаков</h3>
+                <p class="profession">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>

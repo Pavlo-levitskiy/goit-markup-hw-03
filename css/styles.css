@@ -1,7 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--primery-text-color);
-  font-family: sans-serif;
   line-height: 1.5;
   margin: 0;
 }
@@ -21,6 +20,7 @@ body {
 }
 
 p,
+ul,
 h1,
 h2,
 h3,
@@ -31,6 +31,10 @@ h6 {
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -38,12 +42,10 @@ img {
 
 .page-header {
   background-color: var(--white-color);
-}
-
-.border {
   border: 1px solid #ececec;
 }
 .section {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -67,8 +69,8 @@ img {
 .header-link:not(:last-child) {
   margin-right: 50px;
 }
+
 .header-contacts {
-  list-style: none;
   margin-left: auto;
   display: flex;
 }
@@ -79,22 +81,14 @@ img {
 }
 .header-logo {
   padding-bottom: 25px;
-  padding-top: 24px;
+  padding-top: 25px;
 }
 
-/* ------------Hero--------------- */
-.logo {
-  text-transform: capitalize;
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  line-height: 1.19em;
-  color: var(--primery-text-color);
-  text-decoration: none;
-  letter-spacing: 0.03em;
-  padding-right: 92px;
+.site-nav .site-link {
+  color: var(--blue);
 }
 
-.site-nav .link {
+.link {
   color: var(--primery-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -108,11 +102,20 @@ img {
   color: var(--blue);
 }
 
+/* ------------Hero--------------- */
+.logo {
+  text-transform: capitalize;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.19em;
+  color: var(--primery-text-color);
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  margin-right: 93px;
+}
+
 .list {
   align-items: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .contacts {
@@ -144,6 +147,7 @@ img {
 .hero-color {
   background-color: var(--dark-grey);
   padding-bottom: 200px;
+  padding-top: 200px;
 }
 
 .hero-title {
@@ -153,8 +157,7 @@ img {
   line-height: 1.36em;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding-bottom: 30px;
-  padding-top: 200px;
+  margin-bottom: 30px;
 }
 
 .button {
@@ -190,6 +193,10 @@ img {
   border-radius: 4px;
 }
 
+.text:not(:last-child) {
+  margin-right: 30px;
+}
+
 .section-text {
   display: flex;
 }
@@ -200,7 +207,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primery-text-color);
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 /*---------section-photo-------*/
@@ -218,6 +225,10 @@ img {
   text-align: center;
 }
 
+.features {
+  padding-bottom: 0;
+}
+
 .heading-photo {
   margin-bottom: 50px;
   padding-top: 0;
@@ -225,7 +236,7 @@ img {
 
 .item-photo {
   display: flex;
-  flex-basis: auto;
+
   justify-content: space-between;
 }
 
@@ -235,7 +246,6 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.875em;
-  padding-top: 94px;
 }
 .address {
   font-weight: 400;
@@ -248,18 +258,14 @@ img {
   font-size: 14px;
   line-height: 1.71em;
 }
-
-.list-text {
-  width: 270px;
-  height: 101px;
-}
-
 /*---------- section-team--------*/
 
 .section-team {
-  background-color: var(--bg-light-gray);
-  padding-bottom: 94px;
-  padding-top: 94px;
+  background-color: var(--bg-ylight-gra);
+}
+
+.wrapper {
+  padding: 30px 0;
 }
 
 .photo {
@@ -267,12 +273,12 @@ img {
   font-size: 16px;
   line-height: 1.18em;
   letter-spacing: 0.03em;
-  padding-bottom: 10px;
-  padding-top: 30px;
+  margin-bottom: 10px;
 }
 
 .profession {
   color: var(--grey);
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.18em;
   letter-spacing: 0.03em;
@@ -298,14 +304,11 @@ img {
 
 .footer {
   background-color: var(--dark-grey);
+  padding: 60px 0;
 }
 
 .footer-container {
   display: flex;
-}
-
-.footer-tel {
-  margin-bottom: 60px;
 }
 
 .footer-mil {
@@ -313,8 +316,7 @@ img {
 }
 
 .footer-log {
-  padding-top: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 /*-----------portfolio---------*/
@@ -329,7 +331,7 @@ img {
   display: flex;
   align-items: center;
   list-style: none;
-  margin: 50px;
+  margin-bottom: 50px;
 }
 
 .button-mr {
@@ -337,7 +339,7 @@ img {
 }
 
 .project {
-  flex-basis: calc((100% - 30px * 4) / 3);
+  flex-basis: calc((100% - 30px * 3) / 3);
   margin-left: 30px;
   margin-top: 30px;
   background: var(--white-color);
@@ -355,10 +357,9 @@ img {
 .section-title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 2em;
-  margin: 20px 24px 4px 24px;
+  line-height: 2;
+  margin-bottom: 4px;
 }
-
-.text {
-  margin: 0px 24px 20px 24px;
+.wrapper-text {
+  padding: 20px 24px 20px 24px;
 }
