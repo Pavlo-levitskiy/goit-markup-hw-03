@@ -193,6 +193,12 @@ img {
   border-radius: 4px;
 }
 
+.hidden-title {
+  margin: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .text:not(:last-child) {
   margin-right: 30px;
 }
