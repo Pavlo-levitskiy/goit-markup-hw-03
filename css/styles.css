@@ -8,6 +8,7 @@ body {
 :root {
   --blue: #2196f3;
   --grey: #757575;
+  --blue-button: #188ce8;
   --primery-text-color: #212121;
   --white-color: #ffffff;
   --dark-grey: #2f303a;
@@ -42,7 +43,7 @@ img {
 
 .page-header {
   background-color: var(--white-color);
-  border: 1px solid #ececec;
+  border: 1px solid var(--border-light-gra);
 }
 .section {
   padding-top: 94px;
@@ -180,23 +181,24 @@ img {
 }
 
 .button-hero {
-  background-color: var(--blue);
-  color: var(--white-color);
   border: none;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875em;
   letter-spacing: 0.06em;
-  min-width: 200px;
-  height: 50px;
+  background-color: var(--blue);
+  color: var(--white-color);
   border-radius: 4px;
 }
 
+.button-hero:hover,
+.button-hero:focus {
+  background-color: var(--blue-button);
+}
+
 .hidden-title {
-  margin: 0;
-  opacity: 0;
-  pointer-events: none;
+  display: none;
 }
 
 .text:not(:last-child) {
